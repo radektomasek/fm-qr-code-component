@@ -4,12 +4,23 @@
 
 :root {
     --breakpoint-small: 23.4375em;
-    --breakpoint-large: 90em;
 
     --white-color: hsl(0, 0%, 100%);
     --light-gray-color: hsl(212, 45%, 89%);
     --grayish-blue-color: hsl(220, 15%, 55%);
     --dark-blue-color: hsl(218, 44%, 22%);
+
+    --card-width: 20rem;
+    --card-height: 31.0625rem;
+
+    --heading-size: 1.375rem;
+    --heading-line: 1.75rem;
+
+    --paragraph-size: 0.9375rem;
+    --paragraph-line: 1.1875rem;
+    --paragraph-letter: 0.01171875rem;
+
+    --content-size: 18rem;
 }
 
 body {
@@ -34,38 +45,63 @@ p {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    min-width: var(--breakpoint-small);
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    background-color: var(--white-color);
-    width: 20rem;
-    height: 31.0625rem;
-    justify-content: center;
     align-items: center;
     border-radius: 1.5rem;
-    justify-content: space-evenly;
+    background-color: var(--white-color);
+    width: var(--card-width);
+    height: var(--card-height);
+    box-shadow: 0 0.75rem 3.125rem rgb(0 0 0 / 0.1);
 }
 
-.card__qrcode {
-    width: 18rem;
-    height: 18rem;
+.class__qrcode {
+    padding: 1rem 0 1.2rem 0;
+}
+
+.card__image {
+    width: var(--content-size);
+    height: var(--content-size);
     border-radius: 1rem;
 }
 
+.card__content {
+    width: var(--content-size);
+}
+
 .card__heading {
-    font-size: 1.375rem;
-    line-height: 1.75rem;
-    width: 18rem;
+    font-size: var(--heading-size);
+    line-height: var(--heading-line);
     text-align: center;
-    
 }
 
 .card__paragraph {
-    font-size: 0.9375rem;
-    line-height: 1.1875rem;
-    letter-spacing: 0.01171875rem;
-    width: 16rem;
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-line);
+    letter-spacing: var(--paragraph-letter);
+    padding: 0 1rem;
     text-align: center;
+}
+
+.attribution {
+    color: var(--grayish-blue-color);
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.attribution a {
+    color: var(--dark-blue-color);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
 }
