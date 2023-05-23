@@ -53,6 +53,10 @@ Building [this challenge](https://www.frontendmentor.io/challenges/qr-code-compo
 
 The challenge wasn't too difficult in terms of complexity, but I utilized this as an opportunity to play with several variables for the Flexbox. And as a result, I learned there is a `gap` property for Flexbox (I had thought, it was available just for the `grid`).
 
+### Continued development
+
+Athought I used vanilla CSS at this time, I would like to use several methodologies of the CSS in the future. Cube CSS in particular.
+
 ## Author
 
 - Frontend Mentor - [@radektomasek](https://www.frontendmentor.io/profile/radektomasek)
